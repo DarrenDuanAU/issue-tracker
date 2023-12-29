@@ -13,7 +13,7 @@ const Navbar = () => {
     {label: 'issues', href:'/issues'}
   ]
   return (
-    <div className='flex items-center h-14 border-b mb-6'>
+    <div className='flex px-4 items-center h-14 border-b mb-6'>
       <AiFillBug/>
       <ul className='flex'>
         {NavList.map((item) => <li key={item.label} className='pl-6'>
