@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className='flex items-center h-14 border-b mb-6'>
       <AiFillBug/>
       <ul className='flex'>
-        {NavList.map((item) => <li className='pl-6'>
+        {NavList.map((item) => <li key={item.label} className='pl-6'>
           <Link
             className={classNames({
               'text-zinc-900' : item.href === pathName,
