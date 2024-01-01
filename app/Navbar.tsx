@@ -14,7 +14,7 @@ const Navbar = () => {
   ]
   return (
     <div className='flex px-4 items-center h-14 border-b mb-6'>
-      <AiFillBug/>
+      <Link href='/'><AiFillBug/></Link>
       <ul className='flex'>
         {NavList.map((item) => <li key={item.label} className='pl-6'>
           <Link
